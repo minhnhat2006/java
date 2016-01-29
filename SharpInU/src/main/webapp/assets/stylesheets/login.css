@@ -1,0 +1,56 @@
+.model-siu-content {
+	margin: 11px auto;
+	background-image: url('../images/img_bot.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100% 46px;
+	padding-top: 40px;
+	width: 400px;
+}
+
+.model-siu-content .modal-title {
+	text-align: center;
+}
+
+.model-siu-content .modal-header .close {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+.model-siu-content .modal-footer button.btn {
+	min-width: 80px;
+}
+
+.model-siu-logo {
+	position: absolute;
+	top: 0;
+	text-decoration: none;
+}
+
+.model-siu-logo:HOVER {
+	text-decoration: none;
+}
+
+.model-siu-logo>img.img_bot {
+	height: 43px;
+	width: 50px;
+	margin-left: 20px;
+}
+
+.pw-changed-content {
+	width: 340px !important;
+}
+
+.model-siu-content .modal-header, .pw-changed-content .modal-header {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.pw-changed-content .modal-body {
+	text-align: center;
+}
+
+.pw-changed-content .modal-body button {
+	width: 270px;
+}

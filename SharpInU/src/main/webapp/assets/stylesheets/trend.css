@@ -1,0 +1,84 @@
+div#content_edge {
+	position: relative;
+	overflow: hidden;
+	height: auto;
+}
+
+div#content_edge #edge_left, div#content_edge .edge_right {
+	height: auto;
+}
+
+aside.page-title {
+	border-bottom: 3px dashed orange;
+	height: 40px;
+	margin: 0 auto;
+}
+
+aside.page-title>p {
+	color: gray;
+	float: left;
+	font-size: 20pt;
+	padding: 5px 0 5px;
+}
+
+div#content_edge #edge_left h3 {
+	width: 95%;
+}
+
+div#content_edge #edge_left .post-item #edge_left_container {
+	height: auto;
+}
+
+div#content_edge #edge_left .post-item #edge_left_container div {
+	width: auto !important;
+}
+
+div#content_edge #edge_left .post-item a {
+	color: gray;
+	word-spacing: 7px;
+}
+
+.edge_right_down {
+	height: auto;
+}
+
+.edge_right_down .edge-container {
+	height: auto;
+}
+
+.edge_right_down 
+.edge-container .edge-text>span.category-name {
+	font-weight: bold;
+	color: #404040;
+	margin: 5px 0 0 0;
+}
+
+.edge_right_down 
+.edge-container .edge-text>span.category-name:BEFORE {
+	content: '- ';
+}
+
+.edge_right_down 
+.edge-container .edge-text>p.post-name:BEFORE {
+	content: '- ';
+	margin-left: -35px;
+}
+
+div.pagination-container {
+	width: 100%;
+	padding-right: 20px;
+}
+
+div.pagination-container ul {
+	float: right;
+}
+
+div.sote-post {
+	display: inline-block;
+	padding: 0;
+}
+
+.blue {
+	font-size: 11pt;
+	font-style: italic;
+}

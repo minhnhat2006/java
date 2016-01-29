@@ -1,0 +1,172 @@
+package com.sharpinu.web.bean;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+import com.sharpinu.persist.domain.Skill;
+import com.sharpinu.persist.domain.WorkCategory;
+
+/**
+ * This bean contains information relates to a job
+ * 
+ * @author Mark
+ *
+ */
+public class JobViewBean implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2963922082511445658L;
+
+	private int jobId;
+
+	private String title;
+
+	private String description;
+
+	private List<Skill> requiredSkills;
+
+	private String customRequiredSkill;
+
+	private long salaryFromAmount;
+
+	private long salaryToAmount;
+
+	private String salaryType;
+
+	private String salary;
+
+	private String otherOption;
+
+	private WorkCategory workCategory;
+
+	private String location;
+
+	private Date createdDate;
+
+	private int appliedCount;
+
+	private String jobType;
+
+	public int getJobId() {
+		return jobId;
+	}
+
+	public void setJobId(int jobId) {
+		this.jobId = jobId;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public List<Skill> getRequiredSkills() {
+		return requiredSkills;
+	}
+
+	public void setRequiredSkills(List<Skill> requiredSkills) {
+		this.requiredSkills = requiredSkills;
+	}
+
+	public String getCustomRequiredSkill() {
+		return customRequiredSkill;
+	}
+
+	public void setCustomRequiredSkill(String customRequiredSkill) {
+		this.customRequiredSkill = customRequiredSkill;
+	}
+
+	public long getSalaryFromAmount() {
+		return salaryFromAmount;
+	}
+
+	public void setSalaryFromAmount(long salaryFromAmount) {
+		this.salaryFromAmount = salaryFromAmount;
+	}
+
+	public long getSalaryToAmount() {
+		return salaryToAmount;
+	}
+
+	public void setSalaryToAmount(long salaryToAmount) {
+		this.salaryToAmount = salaryToAmount;
+	}
+
+	public String getSalaryType() {
+		return salaryType;
+	}
+
+	public void setSalaryType(String salaryType) {
+		this.salaryType = salaryType;
+	}
+
+	public String getOtherOption() {
+		return otherOption;
+	}
+
+	public void setOtherOption(String otherOption) {
+		this.otherOption = otherOption;
+	}
+
+	public WorkCategory getWorkCategory() {
+		return workCategory;
+	}
+
+	public void setWorkCategory(WorkCategory workCategory) {
+		this.workCategory = workCategory;
+	}
+
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	public String getSalary() {
+		return salary;
+	}
+
+	public void setSalary(String salary) {
+		this.salary = salary;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public int getAppliedCount() {
+		return appliedCount;
+	}
+
+	public void setAppliedCount(int appliedCount) {
+		this.appliedCount = appliedCount;
+	}
+
+	public String getJobType() {
+		return jobType;
+	}
+
+	public void setJobType(String jobType) {
+		this.jobType = jobType;
+	}
+
+}

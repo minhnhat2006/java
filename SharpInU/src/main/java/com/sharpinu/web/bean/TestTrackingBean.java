@@ -1,0 +1,48 @@
+package com.sharpinu.web.bean;
+
+import java.util.List;
+
+import com.sharpinu.persist.domain.TTest;
+
+/**
+ *
+ * @author vodinh90@gmail.com
+ *
+ */
+public class TestTrackingBean {
+	
+	private TTest tTest;
+	private List<QuestionBean> questionBeans;
+	private int correctCount;
+	private int currentQuestionSequence;
+	
+	public TTest gettTest() {
+		return tTest;
+	}
+	public void settTest(TTest tTest) {
+		this.tTest = tTest;
+	}
+	public List<QuestionBean> getQuestionBeans() {
+		return questionBeans;
+	}
+	public void setQuestionBeans(List<QuestionBean> questionBeans) {
+		this.questionBeans = questionBeans;
+	}
+
+	public int getCorrectCount() {
+		return correctCount;
+	}
+
+	public void setCorrectCount(int correctCount) {
+		this.correctCount = correctCount;
+	}
+
+	public int getCurrentQuestionSequence() {
+		return currentQuestionSequence;
+	}
+
+	public void setCurrentQuestionSequence(int currentQuestionSequence) {
+		this.currentQuestionSequence = currentQuestionSequence;
+	}
+
+}

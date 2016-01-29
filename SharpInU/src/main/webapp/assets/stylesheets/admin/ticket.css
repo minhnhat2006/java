@@ -1,0 +1,68 @@
+.ticket-col {
+	display: inline-block;
+	width: 24.5%;
+	text-align: center;
+	margin: 0;
+	border: solid 1px rgba(211, 211, 211, 0.49);
+	line-height: 22pt;
+}
+
+.ticket-col .title {
+	margin-bottom: 10px;
+	font-weight: bold;
+	background-color: rgb(232, 232, 232);
+}
+
+.ticket-content {
+	border-radius: 8px;
+	border: 1px solid #9e9e9e;
+	padding: 10px 15px;
+	margin-top: 20px;
+}
+
+.ticket-content .title {
+	color: gray;
+	font-weight: bold;
+	background: url(https://support.pavietnam.vn/images2/allpavietnam.png)
+		-100px -325px no-repeat;
+	padding: 10px 0px 3px 30px;
+	font-size: 13px;
+	border-bottom: 1px dashed gray;
+	text-transform: uppercase;
+}
+
+.ticket-content .row-fluid {
+	margin: 10px;
+}
+
+.ticket-comment {
+	margin-top: 10px;
+}
+
+.ticket-comment .ticket-content {
+	border-radius: 0px 8px 8px 8px;
+	margin-top: 0;
+}
+
+.ticket-comment-header {
+	width: 250px;
+	border-radius: 4px 4px 0 0;
+	border: 1px solid #9e9e9e;
+	border-bottom: 0;
+	padding: 5px;
+	background: #E4E4E4;
+	color: gray;
+	font-size: 10pt;
+}
+
+.ticket-comment-header i {
+	margin-right: 5px;
+}
+
+.ticket-space {
+	margin: 20px;
+}
+
+#frmTicket div.box {
+	margin-bottom: 45px;
+}

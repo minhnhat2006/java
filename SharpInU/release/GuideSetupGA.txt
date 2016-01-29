@@ -1,0 +1,18 @@
+I. Create a Google Analytics account
+	1. Go to http://www.google.com/analytics sign up for using Google Analytics
+	2. Fill out info on New Account form -> click Get Tracking ID -> click I Accept.
+	3. Copy Tracking ID to "google.analytics.tracking.id" property in /com/sharpinu/config/config.properties file.
+II. Create a project in the Google Developers Console and enable the Analytics API
+	1. Go to https://console.developers.google.com/ -> create a project
+	2. Enter the project name (e.g. SharpInU) -> click create
+	3. In the sidebar on the left, expand APIs & auth -> click APIs
+		- Search Analytics API -> click Enable API if it does not
+	4. In the sidebar on the left, select Credentials.
+		- Click Create new Client ID under OAuth section
+		- Select Service Account -> click Create Client ID
+		- Click Generate new P12 key save file as "google_sa_key.p12" and copy it into /src/main/resources/
+		- Copy Email Address to "google.service.account.email" property in config file.
+III. Add service account to Google Analytics account
+	1. Go to Google Analytics page select Admin tab
+	2. In Account column click User Management
+	3. Enter Email Address created in II to "Add permissions for" select Read & Analyze -> click Add

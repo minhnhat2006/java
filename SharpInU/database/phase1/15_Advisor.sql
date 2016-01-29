@@ -1,0 +1,42 @@
+CREATE TABLE `advisor` (
+  `ADVISOR_ID` INT NOT NULL AUTO_INCREMENT,
+  `TOKEN` VARCHAR(255) NOT NULL,
+  `FROM_DATE` DATETIME NULL,
+  `TO_DATE` DATETIME NULL,
+  `TICKET_ID` INT(11) NOT NULL,
+  `CREATED_DATE` DATETIME NULL,
+  PRIMARY KEY (`ADVISOR_ID`));
+  
+ALTER TABLE `advisor` 
+  ADD INDEX `advisor_ticket_idx` (`TICKET_ID` ASC);
+  
+ALTER TABLE `advisor` 
+  ADD CONSTRAINT `advisor_ticket`
+    FOREIGN KEY (`TICKET_ID`)
+    REFERENCES `hostpro_sharpinu`.`ticket` (`TICKET_ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION;
+
+
+CREATE TABLE `advisor_post` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `ADVISOR_ID` INT(11) NOT NULL,
+  `POST_ID` INT(11) NOT NULL,
+  PRIMARY KEY (`ID`),
+  INDEX `advisor_post_advisor_idx` (`ADVISOR_ID` ASC),
+  INDEX `advisor_post_post_idx` (`POST_ID` ASC),
+  CONSTRAINT `advisor_post_advisor`
+    FOREIGN KEY (`ADVISOR_ID`)
+    REFERENCES `hostpro_sharpinu`.`advisor` (`ADVISOR_ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `advisor_post_post`
+    FOREIGN KEY (`POST_ID`)
+    REFERENCES `hostpro_sharpinu`.`post` (`POST_ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+ALTER TABLE `post` ADD COLUMN `IS_PUBLIC` BIT NULL DEFAULT 1 AFTER `SLUG`;
+
+ALTER TABLE `advisor` 
+ADD COLUMN `ATTACHED_FILE` TEXT NULL AFTER `TOKEN`;

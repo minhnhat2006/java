@@ -1,0 +1,21 @@
+var CarrerPage = {
+    init:function(){
+        var _self=this;
+       _self.initEvent();
+    },
+    initEvent:function(){
+        $('div#career_nav').find('li').each(function(){         
+          $(this).hover(function(){
+              $('li.active').removeClass('active');
+              $(this).addClass('active');
+              $('article#career_right').addClass('hide');
+              $('article.' + $(this).find('>a').attr('name')).removeClass('hide');
+          });
+        });
+       
+    }
+
+};
+$(document).ready(function() {
+    CarrerPage.init();
+});

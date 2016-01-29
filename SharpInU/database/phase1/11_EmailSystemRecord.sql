@@ -1,0 +1,1 @@
+INSERT INTO `email_system` (`EMAIL_SYSTEM_ID`, `PROTOCOL`, `HOST`, `PORT`, `USER_NAME`, `PASSWORD`, `ACTIVE`, `DATE_CREATED`) VALUES ('2', 'smtp', 'mail.sharp-in-u.com', '587', 'consultancy@sharp-in-u.com', 'sharpinu@2015', 'Y', '2015-05-19 16:00:00');

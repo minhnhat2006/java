@@ -1,0 +1,9 @@
+==============================================================
+How to create a new database script
+==============================================================
+	1. Choose the correct phase folder to put your script. If it doesn't have suitable folder, please create a new one.
+		i.e I am working on Phase 2 of project. If I need change something with database, I will put my script in to folder "/database/phase2"
+	2. Put your script into the folder above and naming your file with number prefix. The prefix will start with number 1. Please don't use any existing prefix.
+		i.e I need add a email table for this phase. I will put my script into the file "1_DB_CHANGES.sql".
+	3. Edit database information in LoadScripts.bat and run it to make changes into your database.
+	4. The correctly script can be run multiple times by LoadScripts.bat without any errors. If you find any error in console, please check and correct it before you commit it.

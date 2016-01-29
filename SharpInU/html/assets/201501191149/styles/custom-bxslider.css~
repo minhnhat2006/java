@@ -1,0 +1,45 @@
+.bx-viewport {
+    height: 395px !important;
+}
+div#content_left_picture .bx-pager.bx-default-pager{
+    display: none;
+}
+div#content_left_picture .bx-wrapper{
+    margin-bottom: 0px;
+}
+div.menu-item-0{
+    background-image: url("../images/mndsgray.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.7;
+}
+div.menu-item-0.active-slide{
+    background-image: url("../images/mnds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+}
+div.menu-item-2{
+    background-image: url("../images/Meetinggray.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.7;
+}
+div.menu-item-2.active-slide{
+    background-image: url("../images/Meeting.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+}
+div.menu-item-1{
+    background-image: url("../images/wilderness.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.7;
+}
+div.menu-item-1.active-slide{
+    background-image: url("../images/wilderness.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+}

@@ -1,0 +1,19 @@
+		ALTER TABLE `user` MODIFY COLUMN `PASSWORD_HASH` varchar(255) NULL default NULL;
+	
+		ALTER TABLE `company` ADD COLUMN `ADDITIONAL_INFO` varchar(1000) NULL default NULL;
+
+		ALTER TABLE `career` ADD COLUMN `ADDITIONAL_INFO` varchar(1000) NULL default NULL;
+
+		ALTER TABLE `career` ADD COLUMN `NAME` varchar(255) NOT NULL;
+
+		ALTER TABLE `career` MODIFY `INFO` text NULL default NULL;
+
+		ALTER TABLE `resume` ADD COLUMN `PHONE` varchar(15) NULL default NULL AFTER `CV`;
+ 
+		ALTER TABLE `resume` ADD COLUMN `ADDRESS` varchar(255) NULL default NULL AFTER `CV`;
+ 
+		ALTER TABLE `resume` ADD COLUMN `ACHIEVEMENT` varchar(255) NULL default NULL AFTER `CV`;
+ 
+		ALTER TABLE `resume` MODIFY `CONTACT` varchar(255) NULL default NULL;
+ 
+		ALTER TABLE `resume` MODIFY `SUMMARY_SKILL` text NULL default NULL;

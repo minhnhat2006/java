@@ -1,0 +1,24 @@
+.post-item img {
+	max-width: 100% !important;
+}
+
+.blue a {
+	color: blue !important;
+}
+
+.edge_right_footer>p {
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+	background: beige;
+	padding: 5px;
+}
+
+.edge_right_footer>p>a {
+	display: block;
+	width: 100%;
+}
+
+.edge_right_footer>p>a>u {
+	text-decoration: none;
+}
